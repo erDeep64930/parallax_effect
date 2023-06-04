@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  position: absolute;
+  /* top: 5rem;
+    left: 30%; */
+  color: blue;
+  font-size: 10rem;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 20px;
+}
+.header {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.bg-img,
+.fore-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.bg-img {
+  transform: translateZ(-40px) scale(4);
+}
+.fore-img {
+  transform: translateZ(-30px) scale(2);
+}
+.section {
+  background-color: rgb(45, 45, 45);
+  color: white;
+  padding: 5rem;
+}
+.bg-1 {
+  background-image: url(boy.jpg);
+}
+.bg-2 {
+  background-image: url(par.jpg);
+}
+.bg-3 {
+  background-image: url(sur.jpg);
+}
+.bg {
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+h2 {
+  font-size: 5rem;
+  padding: 3rem;
+}
+p {
+  font-size: 1.5rem;
+  padding: 5rem;
+  margin: 3rem;
+}
